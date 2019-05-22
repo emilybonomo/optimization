@@ -21,3 +21,10 @@ while err > 10^-5
     err = norm(gradf);
     error_plot(iterations)=err;
 end
+
+figure(1) 
+semilogy(error_plot);
+xlabel('Iterations');
+ylabel('Gradient');
+title('Convergence of Gradient');
+legend('Steepest Descent');
