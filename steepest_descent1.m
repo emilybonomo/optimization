@@ -26,7 +26,7 @@ while err > 10^-5
     error_plot(iterations)=err;
 end
 
-%Plot figure
+%Plot gradient convergence figure 
 figure(1) 
 semilogy(error_plot);
 xlabel('Iterations');
